@@ -8,18 +8,14 @@ phrase: place meta data here
 count: 25
 color: cadetblue
 list: [1, 2, 3, 4, "boo"]
-
----
-
----
 author: Doug Anderson
 section: Frontmatter
 
 ---
 
 <script>
-let name = 'you'
-	import List, { TaskList, Styling } from 'listavelte@latest'
+ let name = 'you'
+ import List from 'listavelte@latest'
 <\/script>
 
 # {title}! 
@@ -41,13 +37,7 @@ Import Svelte components from [npm](https://www.npmjs.com/package/listavelte) an
 
 ## made by {author} as specified in the {section} section
 
-
-
-<Styling>
-	<TaskList \/>
-<\/Styling>
-	
-	`;
+`;
 </script>
 
 <EasyMDSvex {initialValue} />
