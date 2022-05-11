@@ -21,7 +21,7 @@ const config = {
 		},
 
 		package: {
-			files: (file) => file.startsWth('demo'),
+			// files: (file) => file.startsWth('demo'),
 			exports: (file) => file === 'index.js'
 		},
 

@@ -3,22 +3,31 @@
 
 	let initialValue = `
 
+---
+author: Doug Anderson
+section: Frontmatter
+
+---
+
 <script>
 	let name = 'dude'
-	import List, { TaskList, Styling } from 'listavelte@0.1.1'
+	import List from 'listavelte'
 <\/script>
 
-# Title 
+
+# Example MDSveX Minisite
+
+
 Go ahead {name}, *make* **a** _note_!
+
+Import Svelte components from [npm](https://www.npmjs.com/package/listavelte) and paste it between two brackets like this: 
 
 <List \/>
 
-Here is a named list, wrapped in style:
+## made by {author} as specified in the {section} section
 
 
-<Styling>
-	<TaskList \/>
-<\/Styling>
+
 	`;
 
 	// , Styling
