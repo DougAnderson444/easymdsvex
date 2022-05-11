@@ -2,6 +2,14 @@
 	import { EasyMDSvex } from '@douganderson444/easymdsvex';
 
 	let initialValue = `
+---
+title: Edit This Title in Frontmatter
+phrase: place meta data here
+count: 25
+color: cadetblue
+list: [1, 2, 3, 4, "boo"]
+
+---
 
 ---
 author: Doug Anderson
@@ -10,15 +18,22 @@ section: Frontmatter
 ---
 
 <script>
-	let name = 'dude'
-	import List from 'listavelte'
+let name = 'you'
+	import List, { TaskList, Styling } from 'listavelte@latest'
 <\/script>
 
+# {title}! 
+## Slightly smaller
+### Even smaller
+#### Really small
 
-# Example MDSveX Minisite
+Hey {name}, {phrase} 
 
+<div style='background-color: lightgreen; padding: 1em; margin:1em'>
+Go ahead and try it 
+<\/div>
 
-Go ahead {name}, *make* **a** _note_!
+*Style* **it** _too_! Use css, js, html,and Markdown (instructions are on the right of the toolbar under the ❔ sign.)
 
 Import Svelte components from [npm](https://www.npmjs.com/package/listavelte) and paste it between two brackets like this: 
 
@@ -28,11 +43,11 @@ Import Svelte components from [npm](https://www.npmjs.com/package/listavelte) an
 
 
 
+<Styling>
+	<TaskList \/>
+<\/Styling>
+	
 	`;
-
-	// , Styling
-	// <Styling>
-	// 	</Styling>
 </script>
 
 <EasyMDSvex {initialValue} />

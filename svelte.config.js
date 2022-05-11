@@ -50,7 +50,7 @@ const config = {
 				minimize: false
 			},
 			worker: {
-				format: 'iife' // https://vitejs.dev/config/#worker-format
+				format:'es' //  default is 'iife' // https://vitejs.dev/config/#worker-format
 			}
 		}
 	}

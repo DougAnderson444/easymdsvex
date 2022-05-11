@@ -1,12 +1,12 @@
 import { SvelteComponent, init, safe_not_equal, element, text, space, claim_element, children, claim_text, detach, claim_space, query_selector_all, attr, insert_hydration, append_hydration, noop, onMount, binding_callbacks, create_component, claim_component, mount_component, transition_in, transition_out, destroy_component } from "../chunks/index-0a7c619a.js";
 import { __vitePreload } from "../chunks/preload-helper-5d4e15b4.js";
 function WorkerWrapper$1() {
-  return new Worker("/easymdsvex/_app/assets/worker.7548e26b.js", {
+  return new Worker("/easymdsvex/_app/assets/worker.e3f95674.js", {
     "type": "module"
   });
 }
 function WorkerWrapper() {
-  return new Worker("/easymdsvex/_app/assets/testerWorker.f8998f96.js", {
+  return new Worker("/easymdsvex/_app/assets/testerWorker.7a3dfaba.js", {
     "type": "module"
   });
 }
@@ -299,4 +299,4 @@ class Routes extends SvelteComponent {
   }
 }
 export { Routes as default };
-//# sourceMappingURL=index.svelte-dd59e9d2.js.map
+//# sourceMappingURL=index.svelte-60e3e60e.js.map
