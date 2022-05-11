@@ -5,7 +5,6 @@
 	import { onMount } from 'svelte';
 	import type { Component, CacheSaver } from './types';
 	import SvelteCompilerWorker from './repl/worker?worker'; // https://vitejs.dev/guide/features.html#import-with-query-suffixes
-	import TestWorker from './testerWorker?worker';
 
 	export let value: string | null = null;
 	export let initialValue: string = `# Title\nGo ahead, *make* **a** _note_!`;
@@ -35,8 +34,6 @@
 
 	onMount(async () => {
 		worker = new SvelteCompilerWorker();
-		let testworker = new TestWorker();
-
 		worker.addEventListener('message', (event) => {
 			if (timeoutID) return; // ignore if there's another worker thread going, wait for that output
 			// no timer left, so use this compiled output
